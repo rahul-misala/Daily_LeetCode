@@ -13,7 +13,7 @@ class Solution {
                 if(pattern[i]=='I'){
                     while(!st.empty()){
                         char num = st.top();
-                        res.push_back(char(num+48));
+                        res.push_back(num+'0');
                         st.pop();
                     }
                 }
@@ -22,7 +22,7 @@ class Solution {
             st.push(count);
             while(!st.empty()){
                 char num = st.top();
-                res.push_back(char(num+48));
+                res.push_back(num+'0');
                 st.pop();
             }
             return res;
